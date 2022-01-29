@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import {
+    BrowserRouter as Router,
+    Route,
+    Routes,
+   
+  } from "react-router-dom";
 
-export default App;
+import Index from "./Component/index";
+import Pie from "./Component/footer/pie";
+import NavBar from "./Component/navbar/navbar";
+import Registrarse from "./Component/modal/Login";
+import Auriculares from "../src/Component/auriculares/auriculares"
+import Cables from "./Component/cables/Cables";
+import AccesoriosAutos from "./Component/accesoriosAuto/AccesoriosAuto";
+import Logo from "./Component/logo/logo";
+
+
+
+
+
+
+
+
+
+const AppRouter = () => {
+    return (
+       
+        <Router>
+            <Logo />
+        
+         <Registrarse />
+        
+        <Routes>
+        <Route path= "/accesoriosauto" element= {<AccesoriosAutos />} />;
+        <Route path= "/cables" element= {<Cables />} />;
+        <Route path= "/auriculares" element= {<Auriculares />} />;
+        <Route path= "/" element= {<Index />} />;
+        
+        </Routes>
+        <NavBar />
+        <Pie />
+        
+        </Router>
+    )
+       
+    }
+
+  
+
+export default AppRouter

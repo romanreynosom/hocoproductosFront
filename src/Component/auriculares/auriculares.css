@@ -1,0 +1,45 @@
+
+
+.productos-general{
+  background-color: rgb(236, 169, 125);
+}
+
+.row-cards {
+    justify-content: space-around;
+}
+.card-img-top{
+    height: 300px;
+  
+}
+.productos {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.card-body{
+    border-radius: 100%;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-subtitle{
+    text-align: center;
+}
+
+ .separador-img {
+   
+    height: 200px;
+    margin-top: 80px;
+} 
+
+@media screen and (max-width: 768px) {
+    .studio-container p {
+        font-size: 18px;
+    }
+
+    .equipos-container h1{
+        padding: 50px 15px;
+    }
+}

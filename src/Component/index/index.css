@@ -1,0 +1,56 @@
+.index{
+    width: 100%;
+}
+
+.productos-general{
+    background-color: rgb(236, 169, 125);
+  }
+  .container{
+      margin-top: 100px;
+  }
+  
+  .row-cards {
+      justify-content: space-around;
+  
+  }
+  .card-img-top{
+      height: 300px;
+    
+  }
+  .productos-general {
+      display: flex;
+     flex-wrap: nowrap;
+      
+  }
+  
+  .card-body{
+      border-radius: 100%;
+      position: relative;
+  }
+  
+  .card-title{
+      text-align: center;
+  }
+  
+  .card-subtitle{
+      text-align: center;
+  }
+  
+   .separador-img {
+     
+      height: 200px;
+      margin-top: 80px;
+  } 
+  
+  @media screen and (min-width: 768px) {
+      .studio-container p {
+          font-size: 18px;
+      }
+  
+      .equipos-container h1{
+          padding: 50px 15px;
+      }
+  }
+
+
+

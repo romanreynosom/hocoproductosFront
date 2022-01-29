@@ -1,0 +1,12 @@
+.NavBar{
+    background-color: cadetblue;
+}
+.texto{
+    text-align: center;
+    display: block;
+}
+.d-block{
+    height: 180px;
+    width: 250px;
+}
+
